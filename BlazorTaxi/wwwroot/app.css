@@ -1,7 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
 }
 
 body {
@@ -9,22 +7,23 @@ body {
     margin: 0 auto;
 }
 
-.content {
+.content-column {
+    column-count: 2;
+}
+
+.content-center {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: center;
 }
 
 .content-left {
     flex-grow: 1;
-    margin-right: 20px;
+    margin: 20px;
     transform: translateX(10%);
-    max-width: 40%;
 }
 
 .content-right {
     flex-grow: 1;
-    margin-left: 20px;
-    transform: translateX(90%);
-    max-width: 40%;
+    margin: 20px;
+    transform: translateX(55%);
 }
